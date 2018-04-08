@@ -22,8 +22,11 @@
        <%= f.text_field :content, class: 'form-control' %>
       </div>
  
-      <%= f.submit '投稿'%>
+      <%= f.submit 'Post', class: 'btn btn-primary btn-block'%>
     <% end %>
+    <div>
+      <%= link_to '一覧に戻る', root_url %>
+    </div>
 
   </div>
 </div>

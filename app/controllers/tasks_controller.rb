@@ -22,7 +22,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     if @task.update(task_params)
       flash[:success] = 'Task は正常に更新されました'
-      redirect_to root_url
+      redirect_to @task
     else
       flash.now[:danger] = 'Task は更新されませんでした'
       render 'toppages/index'
